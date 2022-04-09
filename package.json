@@ -1,24 +1,25 @@
 {
-  "version": "0.0.1",
   "name": "solid-dropzone",
+  "version": "0.0.1",
+  "license": "MIT",
   "description": "Simple HTML5 drag-drop zone with SolidJs, inspired by react-dropzone",
+  "author": "patrick-salvatore",
+  "homepage": "https://github.com/patrick-salvatore/solid-dropzone#readme",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "dist/esm/solid-dropzone.js",
-  "module": "dist/esm/solid-dropzone.js",
-  "types": "dist/types/solid-dropzone.d.ts",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
-      "solid": "./dist/source/solid-dropzone.jsx",
-      "default": "./dist/esm/solid-dropzone.js"
+      "solid": "./dist/source/index.jsx",
+      "default": "./dist/esm/index.js"
     }
   },
   "scripts": {
     "build": "rollup -c",
-    "createDocs": "typedoc src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build",
     "release": "release-it"
   },
@@ -29,13 +30,11 @@
   "keywords": [
     "solidjs"
   ],
-  "author": "patrick-salvatore",
-  "license": "MIT",
-  "homepage": "https://github.com/patrick-salvatore/solid-dropzone#readme",
   "peerDependencies": {
     "solid-js": "^1.3.8"
   },
   "dependencies": {
+    "@release-it/keep-a-changelog": "^2.5.0",
     "file-selector": "0.4.0"
   },
   "devDependencies": {

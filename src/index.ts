@@ -1,1 +1,1 @@
-import './hook';
+export { createDropzone } from './hook';

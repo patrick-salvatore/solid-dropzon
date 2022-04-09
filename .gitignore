@@ -3,6 +3,7 @@ types
 dist
 .vscode
 .yarn/*
+yarn-error.log
 !.yarn/cache
 !.yarn/releases
 !.yarn/plugins
