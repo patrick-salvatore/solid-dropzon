@@ -1,7 +1,7 @@
 node_modules
 types
 dist
-
+.vscode
 .yarn/*
 !.yarn/cache
 !.yarn/releases
