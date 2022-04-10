@@ -97,7 +97,7 @@ export function createDropzone(opts: UseDropzoneArg = {}): UseDropzoneTuple {
     useFsAccessApi &&
     (window as DropzoneWindow).showOpenFilePicker;
 
-  const [state, dispatch] = createSignal(initialState);
+  const [state, dispatch] = createSignal<InitialState>(initialState);
 
   const onFileDialogOpenCb = typeof onFileDialogOpen === 'function' ? onFileDialogOpen : noop;
 
