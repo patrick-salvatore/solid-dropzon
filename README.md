@@ -1,4 +1,4 @@
-# {{ name_of_lib }}
+# Solid dropzone
 
 {{ desc_of_lib }}
 

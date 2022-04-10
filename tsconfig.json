@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "commonjs",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "declaration": true,
+    "target": "esnext",
+    "newLine": "LF",
     "moduleResolution": "node",
-    "declarationDir": "./types",
-    "emitDeclarationOnly": true,
     "strict": true,
     "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsxImportSource": "solid-js"
+    "jsxImportSource": "solid-js",
+    "outDir": "./dist",
+    "module": "esnext"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": [
+    "./src"
+  ],
+  "exclude": ["node_modules/"]
 }
